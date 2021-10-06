@@ -1,0 +1,143 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../image/forest.png) center center fixed no-repeat;
+  background-size: cover;
+  font: 16px sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 385px;
+  background: rgba(208, 208, 208, .7);
+  box-sizing: border-box;
+  padding: 0 35px;
+  border-radius: 15px;
+  margin-top: 200px;
+}
+
+div {
+  height: 55px;
+  line-height: 55px;
+  box-sizing: border-box;
+}
+
+.sign-in {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.email>input, .pwd>input {
+  border: none;
+  outline: none;
+  width: 320px;
+  height: 55px;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.email, .pwd {
+  position: relative;
+}
+
+.email img, .pwd img {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: auto;    
+}
+
+.email>div, .pwd>div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+::placeholder {
+  color: #fff;
+}
+
+.f-pwd>a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.sign-in-btn>button {
+  width: 320px;
+  height: 55px;
+  background-color: rgb(18, 141, 241);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.keep-sign-in {
+  font-size: 14px;
+  color: #fff;
+}
+
+.keep-sign-in>span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-color: #ccc;
+  border-radius: 2px;
+  margin-right: 3px;
+}
+
+.another {
+  color: #fff;
+  position: relative;
+}
+
+.another>a {
+  color: #fff;
+}
+
+.another .login-pic {
+  width: 165px;
+  position: absolute;
+  bottom: 0px;
+  right: -35px;
+  font-size: 0;
+  border-bottom-right-radius: 10px;
+}
+
+.login-pic a img {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  padding-top: 10px;    
+}
+
+.login-pic>a {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background: rgba(248, 248, 248, .4);
+  box-sizing: border-box;
+  border: 1px groove #cccccc24;
+}
+
+.login-pic>a:nth-child(3) {
+  border-bottom-right-radius: 10px;
+}
