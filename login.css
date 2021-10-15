@@ -15,13 +15,14 @@ body {
 }
 
 .container {
+  display: inline-block;
   width: 400px;
   height: 385px;
-  background: rgba(208, 208, 208, .7);
+  background: rgba(208, 208, 208, .5);
   box-sizing: border-box;
   padding: 0 35px;
   border-radius: 15px;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 
 div {
@@ -48,10 +49,28 @@ div {
   box-sizing: border-box;
   color: #fff;
   padding-top: 15px;
+  text-indent: 10px;
 }
 
 .email, .pwd {
   position: relative;
+  overflow: hidden;
+}
+
+.email::after, .pwd::after {
+  content: '';
+  width: 320px;
+  height: 2px;
+  background: linear-gradient(to right, white, #1abc9c, #f1c40f, #e74c3c, white);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition:2s;
+}
+
+.email:hover::after, .pwd:hover::after {
+  transform: translateX(100%);
 }
 
 .email img, .pwd img {
