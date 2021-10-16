@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+// 頁面背景樣式
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(./image/sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+// 登入 div 樣式
+
+main {
+    width: 400px;
+    height: 385px;
+    background: rgba(235, 228, 228, .2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px 30px;
+
+    // 統一 div 樣式
+    div {
+        // flex: 1;
+        width: 100%;
+        height: 55px;
+    }
+
+    // 登入標題樣式
+    div.sign-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    // 帳號、密碼框樣式
+    div.email, div.pwd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            &::after {
+                transform: translateX(100%);
+            }
+        }
+
+        &::after {
+            content: '';
+            width: 340px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(to right, white, #1abc9c, #f1c40f, #e74c3c, white);
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+
+        input {
+            height: 30px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            text-indent: 10px;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        div.email-img, div.pwd-img {
+            width: 55px;
+            height: 55px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    // 忘記密碼樣式
+    div.forget-pwd {
+        position: relative;
+
+        a {
+            display: inline-block;
+            padding-top: 5px;
+            font-size: 10px;
+            color: #fff;
+        }
+    }
+
+    // 登入按鈕樣式
+    div.login-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            flex: 1;
+            height: 45px;
+            font-size: 20px;
+            border-radius: 5px;
+            outline: none;
+            background-color: rgb(64, 163, 209);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    div.keep-log-in {
+        position: relative;
+        font-size: 15px;
+        color: #fff;
+
+        span {
+            display: inline-block;
+            margin-top: 5px;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #fff;
+        }
+    }
+
+    div.sign-in-with {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        a {
+            color: #fff;
+        }
+
+        div.sign-in-pic {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            background: rgba(255, 255, 255, .1);
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+
+                img {
+                    width: 80%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+

@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login Page</title>
-  <link rel="stylesheet" href="./login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁面</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <div class="container">
-    <div class="sign-in">Sign In</div>
-    <div class="email">
-      <input type="text" placeholder="Email">
-      <div>
-        <img src="./image/Email2.png" alt="">
-      </div>
-    </div>
-    <div class="pwd">
-      <input type="password" name="" id="" placeholder="Password">
-      <div>
-        <img src="./image/lock.png" alt="">
-      </div>
-    </div>
-    <div class="f-pwd">
-      <a href="#">Forget Password?</a>
-    </div>
-    <div class="sign-in-btn">
-      <button>Sign In</button>
-    </div>
-    <div class="keep-sign-in">
-        <span id='login-span'></span> Keep me signed in
-    </div>
-    <div class="another">
-      <a href="#">Sign Up</a> or Sign In With 
-      <div class="login-pic">
-        <a href=""><img src="./image/google.png" alt=""></a>
-        <a href=""><img src="./image/twitter.png" alt=""></a>
-        <a href=""><img src="./image/facebook.png" alt=""></a>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="./login.js"></script>
+    <main>
+        <div class="sign-in">Sign In</div>
+        <div class="email">
+            <input type="text" placeholder="Email or Account">
+            <div class="email-img">
+                <img src="./image/Email2.png" alt="">
+            </div>
+        </div>
+        <div class="pwd">
+            <input type="password" placeholder="Password">
+            <div class="pwd-img">
+                <img src="./image/lock.png" alt="">
+            </div>
+        </div>
+        <div class="forget-pwd">
+            <a href="">forget password ?</a>
+        </div>
+        <div class="login-btn">
+            <button>Login</button>
+        </div>
+        <div class="keep-log-in">
+            <span id="login-span"></span> &nbsp;Keep me login
+        </div>
+        <div class="sign-in-with">
+            <div>
+                <a href="">Sign Up</a>&nbsp;or Sign In with
+            </div>
+            <div class="sign-in-pic">
+                <div>
+                    <img src="./image/google.png" alt="">
+                </div>
+                <div>
+                    <img src="./image/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="./image/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./login.js"></script>
 </body>
 </html>
